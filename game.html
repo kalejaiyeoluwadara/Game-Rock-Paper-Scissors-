@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class='container'>
+       
+
+        <div class="title">
+            <div class="fir">
+                <ul>
+                <li>Rock</li>
+                <li>Paper</li>
+                <li>Scissors</li>
+            </ul>
+            </div>
+
+            <div class="score">
+                <p>SCORE</p>
+                <h2 id="score_board">12</h2>
+
+            </div>
+
+        </div>
+
+        <div class="main">
+            <div class="child" id="paper"  onclick="events('paper')">
+                <img src="./images/icon-paper.svg" alt="">
+            </div>
+            
+            <div class="child" id="scissors" onclick="events('scissors')">
+                <img src="./images/icon-scissors.svg" alt="">
+            </div>
+            
+            <div class="child" id="rock" onclick="events('rock')">
+                <img src="./images/icon-rock.svg" alt="">
+            </div>
+            
+        </div>
+
+        <!-- second -->
+        <div class="main2">
+          <section class="sect"> 
+            <section class="first">
+             <h3>You Picked</h3>
+            <div class="child" id="paper" >
+                
+                <img id="player" src="./images/icon-paper.svg" alt="">
+           </div>
+            </section>
+           <section class="second"> 
+            <h3>House Picked</h3>
+            <div class="child" id="rock" >
+                 
+                <img id="house_choice" src="./images/icon-rock.svg" alt="">
+            </div>
+        </section>
+    </section>
+        </div>
+        <div id="message_cont">
+            <h3 id="message">Message here</h3>
+            <button onclick="repeat()">PLAY AGAIN</button>
+        </div>
+    </div>
+    <footer>
+        <button onclick="RulesFunc('open')">RULES</button>
+    </footer>
+     <div id="imgcont">
+        <h2>RULES</h2>
+            <img src="./images/image-rules.svg">
+
+            <button onclick="RulesFunc('close')"><img id="close"  src="./images/icon-close.svg" /></button>
+        </div> 
+</body>
+<script src="game.js"></script>
+</html>
